@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/10177d54da.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/quiz.css">
+        <link rel="stylesheet" href="./css/quizCreateForm.css">
+        <title>Quiz</title>
+    </head>
+    <body>
+        <header id="header">
+            <div class="logo">
+                <img src="./multimedia/img/quiz.jpg" alt="Logo">
+                <span>Generator<span class="quizzz">Quizzzów</span><span>
+            </div>
+            <nav>
+                <ul class="ulNavBar">
+                    <li data-action="mainPage">Strona główna</li>
+                    <li data-action="quizzes">Quizy</li>
+                    <li data-action="createQuiz">Stwórz quiz</li>
+                    <li data-action="yourScores">Twoje wyniki</li>
+                    <li data-action="information">Informacje</li>
+                </ul>
+            </nav>
+            <div class="controlButtons">
+                <ul class="actionButtons">
+                    <li id="theme"><i class="fa-solid fa-moon"></i></li>
+                </ul>
+            </div>
+        </header>
+        <main id="main">
+            <div class="mainPage">
+                <section class="start">
+                    <button id="getStarted">Rozpocznij</button>
+                </section>
+                <section class="quizzes">
+                    <div class="title">Wybierz quiz</div>
+                    <div class="quizzesBox">
+                        <div class="quiz" data-quizid="0">
+                            <img src="./multimedia/img/wiedza_ogolna.jpg" alt="Quiz z wiedzy ogólnej">
+                            <div class="quizTitle">Quiz z wiedzy ogólnej</div>
+                        </div>
+                        <div class="quiz" data-quizid="1">
+                            <img src="./multimedia/img/quiz_tlo.jpg" alt="Quiz">
+                            <div class="quizTitle">Quiz z wiedzy specjalistycznej</div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+            <section id="quizContent">
+                <div class="quizBox">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aspernatur tempora cumque eius quisquam adipisci odio sapiente. Quaerat, exercitationem ipsa! Laboriosam animi praesentium obcaecati, minima odio eveniet optio porro voluptatum quidem aliquid minus, dicta quod repellat officia hic ipsam? Aperiam fugit perferendis in, vel facilis obcaecati praesentium cum molestiae molestias esse similique eos commodi, minima aspernatur fugiat sint nulla reiciendis, aliquam necessitatibus accusantium? Optio, molestias facere, adipisci quam inventore consectetur sequi doloribus harum voluptate atque officiis qui. Blanditiis quia sunt atque illum omnis. Cumque optio modi eveniet illo reiciendis soluta voluptas expedita fugiat facilis rem? Officia magni corporis deleniti quod?
+                </div>
+            </section>
+            <section id="createQuiz">
+                <div class="title">Stwórz quiz</div>
+                <form action="" autocomplete="off">
+                    <div class="text"></div>
+                    <input type="text" name="nazwa_quizu" placeholder="Nazwa quizu">
+                    <input type="text" name="quiz_picture" placeholder="Zdjęcie podglądowe (1024 px x 1024 px)">
+                    <div class="questions"></div>
+                    <div class="buttons">
+                        <input type="submit" value="Zatwierdź i utwórz">
+                        <button class="addQuestionButton"><i class="fa-solid fa-plus"></i></button>
+                        <button class="end">Zakończ dodawanie pytań</button>
+                    </div>
+                </form>
+
+            </section>
+            <section id="yourScores">
+                <div class="title">Twoje wyniki</div>
+                <div class="results">
+                    <div class="resultBox">
+                        <div class="head">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="quizName">Nazwa: <span>Quiz z wiedzy ogólnej</span></div>
+                        <div class="date">Data: <span>18.03.2024 19:06</span></div>
+                        <div class="score">Wynik: <span>100%</span></div>
+                        <div class="pointsCount">Ilość punktów: <span>10/10</span></div>
+                    </div>
+                </div>
+            </section>
+            <section id="information">
+                <div class="title">Informacje</div>
+                <div>
+                    <h2>Użyte czcionki</h2>
+                    <div>Open Font License (OFL) to licencja, która reguluje warunki używania i dystrybucji czcionek. Została stworzona w celu promowania wolnego dostępu do czcionek oraz zachęcania do ich tworzenia i udostępniania społeczności. OFL jest uznawana za jedną z najbardziej elastycznych i otwartych licencji dla czcionek. Oferuje ona pewne zasady które umożliwiają użytkownikom swobodne korzystanie z czcionek</div>
+                    <a href="https://pl.wikipedia.org/wiki/SIL_Open_Font_License" target="_blank">Przeczytaj więcej na temat OFL</a>
+                </div>
+                <div>
+                    <h2>HTML</h2>
+                    <div>HTML, czyli HyperText Markup Language, jest standardowym językiem znaczników wykorzystywanym do tworzenia stron internetowych. Jest to język oparty na tagach, które definiują strukturę i zawartość dokumentu internetowego. HTML jest fundamentalnym narzędziem w tworzeniu stron internetowych, umożliwiającym organizację treści, tworzenie hiperłączy, dodawanie obrazów, formularzy i innych elementów interaktywnych.</div>
+                </div>
+                <div>
+                    <h2>CSS</h2>
+                    <div>CSS, czyli Cascading Style Sheets, jest językiem stylów używanym do opisu wyglądu i formatowania stron internetowych oraz dokumentów HTML. Jest to kluczowa technologia w tworzeniu atrakcyjnych i responsywnych stron internetowych, która umożliwia projektowanie interfejsów użytkownika, dostosowywanie stylów do różnych urządzeń oraz tworzenie efektów wizualnych.</div>
+                </div>
+                <div>
+                    <h2>JavaScript & jQuery</h2>
+                    <div>JavaScript to język programowania powszechnie stosowany do tworzenia interaktywnych stron internetowych. Jest on wykorzystywany zarówno po stronie klienta (w przeglądarkach internetowych), jak i po stronie serwera (za pomocą platform takich jak Node.js). JavaScript umożliwia dodawanie interakcji, dynamiczne modyfikowanie zawartości strony, obsługę zdarzeń użytkownika oraz komunikację z serwerem.</div>
+                    <div>jQuery to biblioteka JavaScript, która ułatwia pracę z JavaScriptem poprzez zapewnienie zestawu prostych i wygodnych funkcji do manipulacji DOM, obsługi zdarzeń, animacji oraz komunikacji z serwerem. Główne zalety jQuery to uproszczenie składni, kompatybilność oraz wszechstronność.</div>
+                </div>
+                <div>
+                    <h2>Bing Create</h2>
+                    <div>Obrazy zostały wygenerowane przez Bing Create, korzystającego z modelu DALLE-3 "DALLE-3" to zaawansowany model sztucznej inteligencji, który został wykorzystany do generowania obrazów przez narzędzie Bing Create. Model ten jest częścią rodziny modeli DALL-E (ang. "DALL-E" - "Data Augmented Language Learning with Empathy"), które zostały opracowane przez OpenAI. DALL-E wykorzystuje architekturę sieci neuronowej do generowania obrazów na podstawie opisów tekstowych, co umożliwia tworzenie realistycznych i kreatywnych grafik na podstawie abstrakcyjnych koncepcji. Dzięki zaawansowanym zdolnościom generatywnym, model DALLE-3 może tworzyć złożone, wysokiej jakości obrazy, które mogą być wykorzystane w różnych kontekstach, od sztuki po projektowanie interfejsów użytkownika.</div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            <div class="footerInformation">
+                <span class="websiteTitle">Generator quizów</span>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, perferendis placeat accusamus consectetur si</p>
+                <span class="author">Wykonanie: Marek Ślusarczyk kl. 4B</span>
+                <img src="./multimedia/img/quiz.jpg" alt="Logo">
+            </div>
+            <div class="links">
+                <div class="linkBox" data-link="https://github.com/MarekSlusarczyk">
+                    <span id="githubIcon"><i class="fa-brands fa-github"></i></span>
+                    <div class="details">
+                        <span class="linkTitle">Github</span>
+                        <span class="description">Github autora strony</span>
+                    </div>
+                </div>
+                <div class="linkBox" data-link="https://www.bing.com/images/create">
+                    <img src="./multimedia/img/bing_logo.png" alt="logo bing">
+                    <div class="details">
+                        <span class="linkTitle">Bing Create</span>
+                        <span class="description">Logo i obrazki dzięki AI</span>
+                    </div>
+                </div>
+                <div class="linkBox" data-link="https://fonts.google.com/">
+                    <img src="./multimedia/img/logo_fonts.png" alt="logo google fonts">
+                    <div class="details">
+                        <span class="linkTitle">Google Fonts</span>
+                        <span class="description">Czcionki użyte na stronie</span>
+                    </div>
+                </div>
+                <div class="linkBox" data-link="https://pixabay.com/pl/">
+                    <img id="pixabay" src="./multimedia/img/pixabay.png" alt="logo pixabay">
+                    <div class="details">
+                        <span class="linkTitle">Pixabay</span>
+                        <span class="description">Inspiracje</span>
+                    </div>
+                </div>
+            </div>
+                
+            <a href="#header"><button id="goUp"><i class="fa-solid fa-chevron-up"></i></button></a>
+        </footer>
+
+        <script src="./js/Results.js"></script>
+        <script src="./js/Result.js"></script>
+        <script src="./js/Quiz.js"></script>
+        <script src="./js/Question.js"></script>
+        <script src="./js/_app.js"></script>
+    </body>
+</html>

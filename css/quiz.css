@@ -1,0 +1,82 @@
+#quizContent {
+    display: none;
+    /* align-items: center;
+    justify-content: center; */
+    flex-direction: column;
+    /* background-color: var(--mainPurple); */
+    /* position: fixed; */
+    /* top: 150px; odczytać wysokość hedaer */
+}
+
+.quizBox {
+    /* height: auto;
+    max-width: 80%;
+    color: var(--black);
+    background-color: var(--main);
+    margin-top: 7%;
+    padding: 8px;
+    font-family: 'Poppins Bold';
+    font-size: 16px; */
+    /* width: auto; */
+    min-height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins Bold';
+    color: var(--second);
+}
+
+.questionAnswersBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question {
+    font-size: 18px;
+}
+
+.additionalInformation {
+    font-size: 15px;
+    font-family: 'Poppins Light';
+}
+
+.questionAnswersBox div input {
+    margin: 15px;
+    width: 250px;
+    height: 60px;
+    border: 2px solid var(--mainPurple);
+    padding: 2px;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+    font-family: 'Poppins Light';
+    color: var(--second);
+    background-color: var(--main);
+}
+
+section#quizContent button {
+    min-width: 80px;
+    min-height: 40px;
+    padding: 5px;
+    background-color: var(--mainPurple);
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.quizScore {
+    display: flex;
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins Bold';
+    color: var(--second);
+}
